@@ -1,0 +1,17 @@
+﻿@model List<KeyValuePair<char, string>>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table border="1" style="width: 10rem; text-align: center">
+    @foreach (var pair in Model)
+    {
+    <tr>
+        <td width="25%">@pair.Key</td>
+        <td>@pair.Value</td>
+    </tr>
+    }
+</table>
